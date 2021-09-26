@@ -32,11 +32,9 @@ brew "postgresql"
 brew "libzdb"
 brew "libzip"
 brew "lua"
-brew "mariadb@10.1"
 brew "mas"
 brew "mcrypt"
 brew "mono"
-brew "neovim"
 brew "node"
 brew "nodebrew"
 brew "noti"
@@ -49,7 +47,6 @@ brew "rust"
 brew "the_silver_searcher"
 brew "tmux"
 brew "trash"
-brew "vim"
 brew "zlib"
 brew "zsh"
 brew "z"
@@ -71,3 +68,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
+mas "Trello", id: 1278508951
