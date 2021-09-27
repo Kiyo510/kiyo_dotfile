@@ -3,5 +3,5 @@
 ## Install
 Run this:
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Kiyo510/kiyo_dotfile/master/setup.sh)"
+/bin/bash -c "$(curl -fsSLhttps://raw.githubusercontent.com/Kiyo510/dotfiles/master/setup.sh)"
 ```
