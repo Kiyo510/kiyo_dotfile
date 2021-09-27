@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -eu
+set -xeu
 
 THIS_DIR=$HOME/dotfiles
 
