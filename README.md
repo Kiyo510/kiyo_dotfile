@@ -1,4 +1,4 @@
-# kiyo_dotfile
+# kiyo_dotfiles
 
 ## Install
 Run this:
