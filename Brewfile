@@ -61,6 +61,7 @@ cask "scroll-reverser"
 cask "tableplus"
 cask "visual-studio-code"
 cask "slack"
+cask "google-chrome"
 cask "dashlane"
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
