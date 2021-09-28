@@ -1,0 +1,7 @@
+[user]
+	email = kanzenziai_r@yahoo.co.jp
+	name = Kiyo510
+[core]
+	editor = code --wait
+[merge]
+	tool = code --wait \"$MERGED\"
