@@ -37,7 +37,16 @@ if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     echo
 fi
+
+if ! mas account 1>/dev/null; then
+    echo "Please open the App Store app and sign in using your Apple ID..."
+    until mas account 1>/dev/null; do
+        sleep 5
+    done
+fi
+
 brew bundle
+
 echo
 
 cat <<END
