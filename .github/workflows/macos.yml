@@ -9,8 +9,6 @@ on:
 jobs:
   macos-test:
     runs-on: macos-latest
-    env:
-      HOMEBREW_BUNDLE_MAS_SKIP: true
 
     steps:
       - uses: actions/checkout@v2
@@ -20,7 +18,9 @@ jobs:
       #   run: brew bundle
 
       - name: Run setup.sh
-        run: ${GITHUB_WORKSPACE}/setup.sh
+        run: |
+          export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
+          ${GITHUB_WORKSPACE}/setup.sh
 
       - name: Load .zshenv
         run: |
