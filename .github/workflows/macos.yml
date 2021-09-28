@@ -9,6 +9,8 @@ on:
 jobs:
   macos-test:
     runs-on: macos-latest
+    env:
+      HOMEBREW_BUNDLE_MAS_SKIP: true
 
     steps:
       - uses: actions/checkout@v2
