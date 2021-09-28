@@ -14,8 +14,8 @@ jobs:
       - uses: actions/checkout@v2
 
       # Error Check
-      - name: Run brew bundle
-        run: brew bundle
+      # - name: Run brew bundle
+      #   run: brew bundle
 
       - name: Run setup.sh
         run: ${GITHUB_WORKSPACE}/setup.sh
