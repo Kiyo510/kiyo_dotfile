@@ -41,7 +41,7 @@ fi
 brew bundle
 
 # setup Prezto
-../install_zprezto.sh
+./install_zprezto.sh
 set_prezto
 
 # install z
