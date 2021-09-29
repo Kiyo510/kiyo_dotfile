@@ -1,3 +1,4 @@
+[![macos](https://github.com/Kiyo510/dotfiles/actions/workflows/macos.yml/badge.svg)](https://github.com/Kiyo510/dotfiles/actions/workflows/macos.yml)
 # kiyo_dotfiles
 
 ## Install
