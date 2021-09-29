@@ -3,7 +3,6 @@
 set -xeu
 
 THIS_DIR=$HOME/dotfiles
-../install_zprezto.sh
 
 if [ ! -d "$THIS_DIR" ]; then
     git clone https://github.com/Kiyo510/dotfiles.git "$THIS_DIR"
@@ -42,6 +41,7 @@ fi
 brew bundle
 
 # setup Prezto
+../install_zprezto.sh
 set_prezto
 
 # install z
