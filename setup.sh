@@ -19,8 +19,6 @@ cd $THIS_DIR
 
 echo "start setup..."
 
-$(./install_zprezto.sh)
-
 for f in .??*; do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" = ".gitconfig.local.template" ]] && continue
@@ -41,6 +39,9 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 
 brew bundle
+
+# setup Prezto
+$(./install_zprezto.sh)
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
