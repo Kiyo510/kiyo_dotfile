@@ -19,6 +19,8 @@ cd $THIS_DIR
 
 echo "start setup..."
 
+$(./install_zprezto.sh)
+
 for f in .??*; do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" = ".gitconfig.local.template" ]] && continue
@@ -39,6 +41,14 @@ if ! command -v brew >/dev/null 2>&1; then
 fi
 
 brew bundle
+
+# install z
+if ! command -v z >/dev/null 2>&1; then
+    echo 'install z..'
+    git clone git@github.com:rupa/z.git $HOME/z
+else
+    echo 'z already installed.'
+fi
 
 echo
 
