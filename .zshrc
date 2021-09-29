@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 # ユーザー名を非表示
-export PS1="%1~ %# "
+# export PS1="%1~ %# "
 
 # Z
 . ~/z/z.sh
