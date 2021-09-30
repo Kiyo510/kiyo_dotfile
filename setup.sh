@@ -46,6 +46,8 @@ brew bundle
 . install_zprezto.sh
 set_prezto
 
+cd $THIS_DIR
+
 source vscode/sync.sh
 sync_vscode
 
