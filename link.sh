@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -xeu
-
 set_symbolic_link() {
     THIS_DIR=$HOME/dotfiles
 
