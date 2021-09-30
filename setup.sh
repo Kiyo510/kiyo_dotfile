@@ -78,7 +78,7 @@ set_prezto
 # install z
 if ! command -v z >/dev/null 2>&1; then
     echo 'install z..'
-    git clone git@github.com:rupa/z.git $HOME/z
+    git clone https://github.com/rupa/z.git $HOME/z
 else
     echo 'z already installed.'
 fi
