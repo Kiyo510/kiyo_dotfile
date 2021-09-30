@@ -46,7 +46,7 @@ brew bundle
 . install_zprezto.sh
 set_prezto
 
-source /vscode/sync.sh
+source vscode/sync.sh
 sync_vscode
 
 # install z
