@@ -13,10 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Error Check
-      # - name: Run brew bundle
-      #   run: brew bundle
-
       - name: Run setup.sh
         run: |
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)

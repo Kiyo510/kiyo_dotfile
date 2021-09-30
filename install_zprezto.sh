@@ -33,3 +33,5 @@ set_prezto() {
     echo "Success!"
     echo "######################################"
 }
+
+set_prezto
