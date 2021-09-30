@@ -32,18 +32,8 @@ cd $THIS_DIR
 
 echo "start setup..."
 
-for f in .??*; do
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" = ".gitconfig.local.template" ]] && continue
-    [[ "$f" = ".gitmodules" ]] && continue
-    [[ "$f" = ".gitignore" ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
-    [[ "$f" == ".aws" ]] && continue
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" == ".ssh" ]] && continue
-
-    ln -snfv "$THIS_DIR/$f" ~/
-done
+. link.sh
+set_symbolic_link
 
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/

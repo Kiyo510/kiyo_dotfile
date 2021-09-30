@@ -2,18 +2,17 @@
 
 set -xeu
 
-THIS_DIR=$HOME/dotfiles
+set_symbolic_link() {
+    THIS_DIR=$HOME/dotfiles
 
-for f in .??*; do
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" = ".gitconfig.local.template" ]] && continue
-    [[ "$f" = ".gitmodules" ]] && continue
-    [[ "$f" = ".gitignore" ]] && continue
-    [[ "$f" == ".DS_Store" ]] && continue
-    [[ "$f" == ".aws" ]] && continue
-    [[ "$f" == ".git" ]] && continue
-    [[ "$f" == ".ssh" ]] && continue
+    for f in .??*; do
+        [[ "$f" == ".git" ]] && continue
+        [[ "$f" == ".gitconfig.local.template" ]] && continue
+        [[ "$f" =~ .zl|.zpr|.zsh|.ssh|.aws|.DS_Store|.gitignore|.gitmodules ]] && continue
 
-    ln -snfv "$THIS_DIR/$f" ~/
-done
-echo "success!"
+        ln -snfv "$THIS_DIR/$f" ~/
+    done
+    echo "success!"
+}
+
+set_symbolic_link
