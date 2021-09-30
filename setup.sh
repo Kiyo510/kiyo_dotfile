@@ -40,17 +40,6 @@ fi
 
 brew bundle
 
-# setup Prezto
-set_prezto
-
-# install z
-if ! command -v z >/dev/null 2>&1; then
-    echo 'install z..'
-    git clone git@github.com:rupa/z.git $HOME/z
-else
-    echo 'z already installed.'
-fi
-
 set_prezto() {
     if [ ! -d "$HOME/.zprezto" ]; then
         git clone --recursive \
@@ -82,6 +71,17 @@ set_prezto() {
     echo "Success!"
     echo "######################################"
 }
+
+# setup Prezto
+set_prezto
+
+# install z
+if ! command -v z >/dev/null 2>&1; then
+    echo 'install z..'
+    git clone git@github.com:rupa/z.git $HOME/z
+else
+    echo 'z already installed.'
+fi
 
 echo
 
