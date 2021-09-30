@@ -1,6 +1,8 @@
 #!/bin/bash
 set_prezto() {
 
+    set -exu
+
     if [ ! -d "$HOME/.zprezto" ]; then
         git clone --recursive \
             https://github.com/sorin-ionescu/prezto.git \

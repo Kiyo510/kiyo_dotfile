@@ -1,6 +1,9 @@
 #!/bin/bash
 
 set_symbolic_link() {
+
+    set -exu
+
     THIS_DIR=$HOME/dotfiles
 
     for f in .??*; do
