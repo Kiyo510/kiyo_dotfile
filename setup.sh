@@ -43,9 +43,11 @@ fi
 
 brew bundle
 
-# setup Prezto
 . install_zprezto.sh
 set_prezto
+
+. vscode/sync.sh
+sync_vscode
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
