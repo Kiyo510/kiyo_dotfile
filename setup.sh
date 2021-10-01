@@ -16,9 +16,6 @@ cat <<'EOF'
 EOF
 
 THIS_DIR=$HOME/dotfiles
-source $(cd $(dirname $0) && pwd)/link.sh
-source $(cd $(dirname $0) && pwd)/install_zprezto.sh
-source $(cd $(dirname $0) && pwd)/sync.sh
 
 if [ ! -d "$THIS_DIR" ]; then
     git clone https://github.com/Kiyo510/dotfiles.git "$THIS_DIR"
@@ -33,8 +30,7 @@ fi
 cd $THIS_DIR
 
 echo "start setup..."
-
-set_symbolic_link
+source $(cd $(dirname $0) && pwd)/link.sh
 
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
@@ -43,11 +39,11 @@ fi
 
 brew bundle
 
-set_prezto
+source $(cd $(dirname $0) && pwd)/install_zprezto.sh
 
 cd $THIS_DIR
 
-sync_vscode
+source $(cd $(dirname $0) && pwd)/vscode/sync.sh
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
