@@ -12,7 +12,7 @@ sync-vscode:
 
 .PHONY: brew-bundle
 brew-bundle:
-	brew bundle
+	brew bundle --file=$(HOME)/dotfiles/Brewfiles
 
 .PHONY: deploy
 deploy: 
