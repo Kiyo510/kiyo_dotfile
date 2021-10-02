@@ -53,6 +53,6 @@ fi
 cat <<END
 **************************************************
 DOTFILES SETUP FINISHED! bye.
-PLEASE NEXT RUN "source ~/.zshrc"
+PLEASE NEXT RUN "source ~/.zshrc && zinit self-update" 
 **************************************************
 END
