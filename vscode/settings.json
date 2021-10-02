@@ -45,5 +45,6 @@
     "notebook.cellToolbarLocation": {
         "default": "right",
         "jupyter-notebook": "left"
-    }
+    },
+    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline"
 }
