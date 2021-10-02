@@ -17,7 +17,7 @@ Install Brewfile:
 make brew-bundle
 ```
 
-Sync VsCode Settings:
+Sync VSCode Settings:
 
 ```bash
 make sync-vscode
