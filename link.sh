@@ -1,19 +1,21 @@
 #!/bin/bash
+set -exu
 
-set_symbolic_link() {
+THIS_DIR=$HOME/dotfiles
+ZSH_DIR=$THIS_DIR/zsh/
 
-    set -exu
+for f in .??*; do
+    [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".gitconfig.local.template" ]] && continue
+    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitignore|.gitmodules ]] && continue
+    ln -snfv "$THIS_DIR/$f" ~/
+done
 
-    THIS_DIR=$HOME/dotfiles
-
-    for f in .??*; do
-        [[ "$f" == ".git" ]] && continue
-        [[ "$f" == ".gitconfig.local.template" ]] && continue
-        [[ "$f" =~ .ssh|.aws|.DS_Store|.gitignore|.gitmodules ]] && continue
-
-        ln -snfv "$THIS_DIR/$f" ~/
-    done
-    echo "success!"
-}
-
-set_symbolic_link
+cd $ZSH_DIR
+for f in .??*; do
+    [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".gitconfig.local.template" ]] && continue
+    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitignore|.gitmodules ]] && continue
+    ln -snfv "$ZSH_DIR/$f" ~/
+done
+echo "success!"
