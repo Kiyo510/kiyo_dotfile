@@ -1,6 +1,6 @@
 .PHONY: setup
 setup: 
-	@echo	"--------------------Start setup"--------------------"
+	@echo	"--------------------Start setup--------------------"
 	@./setup.sh
 	@echo "--------------------Finished Successfully.--------------------"
 
