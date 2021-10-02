@@ -39,6 +39,8 @@ zinit light zdharma/history-search-multi-word
 . ~/z/z.sh
 
 # python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
 # ruby
