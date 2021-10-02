@@ -28,6 +28,6 @@ jobs:
 
       - name: Load .zshrc
         run: |
-          export TERM="xterm-256color"
+          export TERM="xterm"
           zsh ~/.zshrc 2> error.log; cat error.log
           if [ -s error.log ]; then false; fi
