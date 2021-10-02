@@ -1,7 +1,4 @@
 #!/bin/bash
-
-set -xeu
-
 cat <<'EOF'
 
   __          __       ___      ___
@@ -14,6 +11,8 @@ cat <<'EOF'
 
 
 EOF
+
+set -xeu
 
 THIS_DIR=$HOME/dotfiles
 
