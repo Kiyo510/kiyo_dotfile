@@ -8,3 +8,23 @@ Run this:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Kiyo510/dotfiles/master/setup.sh)"
 source ~/.zshrc && zinit self-update
 ```
+
+## Usage
+
+Install Brewfile:
+
+```bash
+make brew-bundle
+```
+
+Sync VsCode Settings:
+
+```bash
+make sync-vscode
+```
+
+Setting dotfiles symbolic link:
+
+```bash
+make deploy
+```
