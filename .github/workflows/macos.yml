@@ -21,13 +21,13 @@ jobs:
           HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
           HOMEBREW_BUNDLE_CASK_SKIP: "docker"
 
-      - name: Load .zshenv
-        run: |
-          zsh ~/.zshenv 2> error.log; cat error.log
-          if [ -s error.log ]; then false; fi
+      # - name: Load .zshenv
+      #   run: |
+      #     zsh ~/.zshenv 2> error.log; cat error.log
+      #     if [ -s error.log ]; then false; fi
 
-      - name: Load .zshrc
-        run: |
-          export TERM="xterm-256color"
-          source ~/.zshrc 2> error.log; cat error.log
-          if [ -s error.log ]; then false; fi
+      # - name: Load .zshrc
+      #   run: |
+      #     export TERM="xterm-256color"
+      #     source ~/.zshrc 2> error.log; cat error.log
+      #     if [ -s error.log ]; then false; fi
