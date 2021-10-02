@@ -39,10 +39,7 @@ fi
 
 brew bundle
 
-source $(cd $(dirname $0) && pwd)/install_zprezto.sh
-
 cd $THIS_DIR
-
 source $(cd $(dirname $0) && pwd)/vscode/sync.sh
 
 # install z
