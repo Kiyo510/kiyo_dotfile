@@ -1,4 +1,6 @@
 ### Added by Zinit's installer
+set -uex
+
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
@@ -23,7 +25,7 @@ zinit cdclear -q
 setopt promptsubst
 zinit snippet OMZT::gnzh
 zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
-export DEFAULT_USER=`whoami`
+# export DEFAULT_USER=`whoami`
 
 # 補完
 zinit light zsh-users/zsh-autosuggestions
