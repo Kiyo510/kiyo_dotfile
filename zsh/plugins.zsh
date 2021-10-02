@@ -9,18 +9,6 @@ zinit cdclear -q
 setopt promptsubst
 zinit snippet OMZT::gnzh
 zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
-export DEFAULT_USER=$(whoami)
-
-# End the prompt, closing any open segments
-prompt_end() {
-    if [[ -n $CURRENT_BG ]]; then
-        print -n "%{%k%F{$CURRENT_BG}%}$SEGMENT_SEPARATOR"
-    else
-        print -n "%{%k%}"
-    fi
-    print -n "\n→%{%f%}"
-    CURRENT_BG=''
-}
 
 # 補完
 zinit light zsh-users/zsh-autosuggestions
