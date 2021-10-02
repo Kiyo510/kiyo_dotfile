@@ -12,7 +12,7 @@ cat <<'EOF'
 
 EOF
 
-set -xeu
+set -eu
 
 THIS_DIR=$HOME/dotfiles
 
