@@ -50,6 +50,8 @@ else
     echo 'z already installed.'
 fi
 
+source ~/.zshrc
+
 cat <<END
 **************************************************
 DOTFILES SETUP FINISHED! bye.

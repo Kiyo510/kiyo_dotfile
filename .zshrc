@@ -12,27 +12,27 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
-# zinit snippet PZT::modules/helper/init.zsh
+zinit snippet PZT::modules/helper/init.zsh
 
-# # oh-my-zshのセットアップ
-# zinit snippet OMZL::git.zsh
-# zinit snippet OMZP::git
-# zinit cdclear -q
+# oh-my-zshのセットアップ
+zinit snippet OMZL::git.zsh
+zinit snippet OMZP::git
+zinit cdclear -q
 
-# # プロンプトのカスタマイズ
-# setopt promptsubst
-# zinit snippet OMZT::gnzh
-# zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
-# export DEFAULT_USER=`whoami`
+# プロンプトのカスタマイズ
+setopt promptsubst
+zinit snippet OMZT::gnzh
+zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHubリポジトリを Group/Repository で指定。
+export DEFAULT_USER=`whoami`
 
-# # 補完
-# zinit light zsh-users/zsh-autosuggestions
+# 補完
+zinit light zsh-users/zsh-autosuggestions
 
-# # シンタックスハイライト
-# zinit light zdharma/fast-syntax-highlighting
+# シンタックスハイライト
+zinit light zdharma/fast-syntax-highlighting
 
-# # Ctrl+r でコマンド履歴を検索
-# zinit light zdharma/history-search-multi-word
+# Ctrl+r でコマンド履歴を検索
+zinit light zdharma/history-search-multi-word
 
 
 # Z
