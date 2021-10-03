@@ -13,6 +13,6 @@
   {
     "key": "ctrl+shift+backspace",
     "command": "workbench.action.terminal.kill",
-    "when": "terminalFocus"
+    "when": "terminalProcessSupported"
   }
 ]
