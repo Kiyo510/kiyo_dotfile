@@ -33,3 +33,11 @@ export DOCKER_CONTENT_TRUST=1
 alias gs='git status'
 alias gb='git branch'
 alias gcob='git checkout -b'
+
+# zsh
+function jump_middle() {
+    CURSOR=$((${#BUFFER} / 2))
+    zle redisplay
+}
+zle -N jump_middle
+bindkey "^j" jump_middle
