@@ -27,6 +27,7 @@ eval "$(rbenv init - zsh)"
 alias dc='docker-compose'
 alias docker-purge='docker stop $(docker ps -q) && docker rmi $(docker images -q) -f'
 alias dumpmonita='docker exec -it scrp_tabelog_monita_db_1 mysqldump -u root  monita_development'
+alias drm='docker system prune'
 export DOCKER_CONTENT_TRUST=1
 
 # git
@@ -41,3 +42,15 @@ function jump_middle() {
 }
 zle -N jump_middle
 bindkey "^j" jump_middle
+
+# manual
+function mm() {
+    if [[ $1 ]]; then
+        printf "\033[36m%-20s\033[0m %-20s %-30s\n" "[main:sub]" "[Command]" "[Description]"
+        cat $HOME/.manurc | grep $1 | awk -F " *?## *?" '{printf "\033[36m%-20s\033[0m %-20s %-30s\n", $1, $2, $3}'
+    else
+        echo "mm iterm[:line, :window, ...]"
+        echo "mm alias[:docker, ...]"
+        echo "mm vscode[:terminal, ...]"
+    fi
+}

@@ -1,0 +1,13 @@
+iterm:line ## ⌃e ## go tail 
+iterm:line ## ⌃j ## go middle
+iterm:line ## ⌃a ## go head
+iterm:window ## ⌘d ## split window vertically
+iterm:window ## ⌘⇧d ## split window horizontally
+
+vscode:terminal ## ⌃⇧backspace ## kill active terminal
+vscode:terminal ## ⌃⇧` ## create new terminal
+
+alias:docker ## dc ## docker-compose
+alias:docker ## docker-purge ## docker stop $(docker ps -q) && docker rmi $(docker images -q) -f
+alias:docker ## dumpmonita ## ddocker exec -it scrp_tabelog_monita_db_1 mysqldump -u root  monita_development
+alias:docker ## drm ## docker system prune
