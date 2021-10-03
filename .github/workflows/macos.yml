@@ -17,7 +17,6 @@ jobs:
         run: |
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
           ${GITHUB_WORKSPACE}/setup.sh
-          source ~/.zshrc && zinit self-update
         env:
           HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
           HOMEBREW_BUNDLE_CASK_SKIP: "docker"
