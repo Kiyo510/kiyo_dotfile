@@ -5,3 +5,6 @@
 	editor = code --wait
 [merge]
 	tool = code --wait \"$MERGED\"
+[alias]
+	o = checkout
+	r = remote

@@ -11,3 +11,5 @@ alias:docker ## dc ## docker-compose
 alias:docker ## docker-purge ## docker stop $(docker ps -q) && docker rmi $(docker images -q) -f
 alias:docker ## dumpmonita ## ddocker exec -it scrp_tabelog_monita_db_1 mysqldump -u root  monita_development
 alias:docker ## drm ## docker system prune
+alias:git ## g o B ## git checkout feature/something-great(using peco, jq)
+alias:git ## g r add origin H ## git remote add origin git@github.com/my/repo(using peco, jq)

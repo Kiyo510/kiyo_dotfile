@@ -34,6 +34,8 @@ export DOCKER_CONTENT_TRUST=1
 alias gs='git status'
 alias gb='git branch'
 alias gcob='git checkout -b'
+alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
+alias -g H='`curl -sL https://api.github.com/users/Kiyo510/repos | jq -r ".[].full_name" | peco --prompt "GITHUB REPOS>" | head -n 1`'
 
 # zsh
 function jump_middle() {
