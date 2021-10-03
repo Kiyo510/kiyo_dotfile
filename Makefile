@@ -22,4 +22,4 @@ deploy:
 
 # .PHONY: shellcheck
 # shellcheck:
-# 	shellcheck ./**/*.sh .zprofile .zshrc .bashrc .bash_profile
+# 	shellcheck ./vscode/*.sh ./zsh/.zprofile ./zsh/.zshenv .zshrc
