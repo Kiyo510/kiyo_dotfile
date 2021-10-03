@@ -54,7 +54,7 @@ function mm() {
         cat $HOME/.manurc | grep $1 | awk -F " *?## *?" '{printf "\033[36m%-20s\033[0m %-20s %-30s\n", $1, $2, $3}'
     else
         echo "mm iterm[:line, :window, ...]"
-        echo "mm alias[:docker, ...]"
+        echo "mm alias[:docker, :git...]"
         echo "mm vscode[:terminal, ...]"
     fi
 }
