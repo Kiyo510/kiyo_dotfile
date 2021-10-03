@@ -37,6 +37,7 @@ alias gcob='git checkout -b'
 alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s/^\*\s*//g"`'
 alias -g H='`curl -sL https://api.github.com/users/Kiyo510/repos | jq -r ".[].full_name" | peco --prompt "GITHUB REPOS>" | head -n 1`'
 alias gbdgr='(){git branch | grep $1 | xargs git branch -d}'
+alias gad='git rm $(git ls-files --deleted)'
 
 # zsh
 function jump_middle() {
