@@ -1,9 +1,11 @@
 #!/bin/bash
+
 set -exu
 
 THIS_DIR=$HOME/dotfiles
 ZSH_DIR=$THIS_DIR/zsh/
 
+echo "deploy starting..."
 for f in .??*; do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == ".gitconfig.local.template" ]] && continue

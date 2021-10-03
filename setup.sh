@@ -16,6 +16,7 @@ set -eu
 
 THIS_DIR=$HOME/dotfiles
 
+echo "start setup..."
 if [ ! -d "$THIS_DIR" ]; then
     git clone https://github.com/Kiyo510/dotfiles.git "$THIS_DIR"
 else
@@ -27,8 +28,6 @@ else
 fi
 
 cd $THIS_DIR
-
-echo "start setup..."
 source $(cd $(dirname $0) && pwd)/link.sh
 
 if ! command -v brew >/dev/null 2>&1; then

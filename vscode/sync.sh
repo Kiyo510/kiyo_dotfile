@@ -4,6 +4,7 @@ set -exu
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 VSCODE_SETTING_DIR=~/Library/Application\ Support/Code/User
 
+echo "start sync vscode.."
 if [ ! -d "$VSCODE_SETTING_DIR" ]; then
     mkdir -p "$VSCODE_SETTING_DIR"
 fi
@@ -27,3 +28,4 @@ if [ -x "$(command -v code)" ]; then
 else
     echo "VSCode is not installed."
 fi
+echo "success!"
