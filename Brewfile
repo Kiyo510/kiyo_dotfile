@@ -68,6 +68,7 @@ cask "rocket"
 cask "scroll-reverser"
 cask "tableplus"
 cask "visual-studio-code"
+cask "google-japanese-ime"
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
