@@ -37,7 +37,7 @@
         "*.log": "default"
     },
     "[vue]": {
-        "editor.defaultFormatter": "octref.vetur",
+        "editor.defaultFormatter": "octref.vetur"
     },
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
