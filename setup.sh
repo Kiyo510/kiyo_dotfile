@@ -27,8 +27,7 @@ else
     git pull origin master
 fi
 
-cd $THIS_DIR
-source $(cd $(dirname $0) && pwd)/link.sh
+source $THIS_DIR/link.sh
 
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
@@ -37,8 +36,7 @@ fi
 
 brew bundle --file=$THIS_DIR/Brewfile
 
-cd $THIS_DIR
-source $(cd $(dirname $0) && pwd)/vscode/sync.sh
+source $THIS_DIR/vscode/sync.sh
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
