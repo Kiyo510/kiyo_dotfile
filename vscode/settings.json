@@ -46,5 +46,6 @@
         "default": "right",
         "jupyter-notebook": "left"
     },
-    "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline"
+    // "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
+    "terminal.integrated.fontFamily": "Hack Nerd Font"
 }
