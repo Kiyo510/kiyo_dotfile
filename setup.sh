@@ -27,6 +27,7 @@ else
     git pull origin master
 fi
 
+cd $THIS_DIR
 source $THIS_DIR/link.sh
 
 if ! command -v brew >/dev/null 2>&1; then
@@ -36,6 +37,7 @@ fi
 
 brew bundle --file=$THIS_DIR/Brewfile
 
+cd $THIS_DIR
 source $THIS_DIR/vscode/sync.sh
 
 # install z
