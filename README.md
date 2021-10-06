@@ -11,6 +11,18 @@ source ~/.zshrc && zinit self-update
 
 ## Usage
 
+Setup:
+```bash
+make setup
+```
+
+Setting dotfiles symbolic link:
+
+```bash
+make deploy
+```
+
+
 Install Brewfile:
 
 ```bash
@@ -21,10 +33,4 @@ Sync VSCode Settings:
 
 ```bash
 make sync-vscode
-```
-
-Setting dotfiles symbolic link:
-
-```bash
-make deploy
 ```
