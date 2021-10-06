@@ -40,7 +40,7 @@ alias gbdgr='(){git branch | grep $1 | xargs git branch -d}'
 alias gad='git rm $(git ls-files --deleted)'
 
 # heroku
-alias hegitremote='git:remote --app app_name'
+alias hegitremote='(){heroku git:remote --app $1}'
 alias hessh-'heroku run bash'
 
 # zsh
