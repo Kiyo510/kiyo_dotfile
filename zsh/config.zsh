@@ -39,6 +39,10 @@ alias -g H='`curl -sL https://api.github.com/users/Kiyo510/repos | jq -r ".[].fu
 alias gbdgr='(){git branch | grep $1 | xargs git branch -d}'
 alias gad='git rm $(git ls-files --deleted)'
 
+# heroku
+alias hegitremote='git:remote --app app_name'
+alias hessh-'heroku run bash'
+
 # zsh
 function jump_middle() {
     CURSOR=$((${#BUFFER} / 2))
