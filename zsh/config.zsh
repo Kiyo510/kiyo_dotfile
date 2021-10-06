@@ -41,7 +41,7 @@ alias gad='git rm $(git ls-files --deleted)'
 
 # heroku
 alias hegitremote='(){heroku git:remote --app $1}'
-alias hessh-'heroku run bash'
+alias hessh='heroku run bash'
 
 # zsh
 function jump_middle() {
