@@ -3,6 +3,7 @@
 	name = Kiyo510
 [core]
 	editor = code --wait
+	excludesfile = /Users/kiyo/.gitignore_global
 [merge]
 	tool = code --wait \"$MERGED\"
 [alias]
