@@ -9,3 +9,5 @@
 [alias]
 	o = checkout
 	r = remote
+[init]
+	defaultBranch = main
