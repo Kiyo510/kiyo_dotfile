@@ -39,6 +39,7 @@ brew bundle --file=$THIS_DIR/Brewfile
 
 cd $THIS_DIR
 source $THIS_DIR/vscode/sync.sh
+source $THIS_DIR/alfred/sync.sh
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
