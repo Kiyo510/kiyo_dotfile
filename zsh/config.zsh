@@ -51,6 +51,27 @@ function jump_middle() {
 zle -N jump_middle
 bindkey "^j" jump_middle
 
+# 履歴ファイルの保存先
+HISTFILE=~/.zsh_history
+
+# メモリに保存される履歴の件数
+export HISTSIZE=1000
+
+# 履歴ファイルに保存される履歴の件数
+export SAVEHIST=100000
+
+# 重複を記録しない
+setopt hist_ignore_dups
+
+# 開始と終了を記録
+setopt EXTENDED_HISTORY
+
+# 余分な空白は詰めて記録
+setopt hist_reduce_blanks
+
+# 古いコマンドと同じものは無視
+setopt hist_save_no_dups
+
 # manual
 function mm() {
     if [[ $1 ]]; then
