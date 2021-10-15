@@ -51,6 +51,9 @@ function jump_middle() {
 zle -N jump_middle
 bindkey "^j" jump_middle
 
+# AUTO_CDオプションを有効にする
+setopt AUTO_CD
+
 # 履歴ファイルの保存先
 HISTFILE=~/.zsh_history
 
