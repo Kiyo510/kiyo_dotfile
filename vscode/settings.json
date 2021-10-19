@@ -12,6 +12,7 @@
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "workbench.editor.labelFormat": "short", // タブに表示する文字列の設定
     "workbench.editor.tabSizing": "shrink", // タブの表示設定
+    "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "none", // Welcome Page を表示しない
     "emmet.showSuggestionsAsSnippets": true, // Emmet の候補を表示
     "emmet.triggerExpansionOnTab": true, // TAB キーで Emmet を展開できるようにする

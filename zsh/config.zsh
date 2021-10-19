@@ -21,7 +21,7 @@ eval "$(pyenv init -)"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init - zsh)"
+if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
 
 # docker
 alias dc='docker-compose'
