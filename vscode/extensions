@@ -17,10 +17,12 @@ ms-python.python
 ms-python.vscode-pylance
 ms-toolsai.jupyter
 ms-toolsai.jupyter-keymap
+ms-toolsai.jupyter-renderers
 octref.vetur
 onecentlin.laravel-blade
 onecentlin.laravel5-snippets
 rebornix.ruby
 rexshi.phpdoc-comment-vscode-plugin
 sianglim.slim
+wayou.vscode-todo-highlight
 wingrunr21.vscode-ruby
