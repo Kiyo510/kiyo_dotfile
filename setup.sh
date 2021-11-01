@@ -44,6 +44,7 @@ source $THIS_DIR/alfred/sync.sh
 # install z
 if ! command -v z >/dev/null 2>&1; then
     echo 'install z..'
+    cd $HOME
     git clone https://github.com/rupa/z.git $HOME/z
 else
     echo 'z already installed.'

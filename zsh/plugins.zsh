@@ -14,7 +14,7 @@ zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHu
 zinit light zsh-users/zsh-autosuggestions
 
 # シンタックスハイライト
-zinit light zdharma/fast-syntax-highlighting
+# zinit light zdharma/fast-syntax-highlighting
 
 # Ctrl+r でコマンド履歴を検索
-zinit light zdharma/history-search-multi-word
+# zinit light zdharma/history-search-multi-word

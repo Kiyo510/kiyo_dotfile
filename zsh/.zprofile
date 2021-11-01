@@ -42,3 +42,4 @@ typeset -gU cdpath fpath mailpath path
 # )
 
 export PATH="$HOME/bin:$PATH"
+eval "$(/opt/homebrew/bin/brew shellenv)"
