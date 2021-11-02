@@ -14,7 +14,14 @@ zinit light agnoster/agnoster-zsh-theme # <- ここで好きなテーマのGitHu
 zinit light zsh-users/zsh-autosuggestions
 
 # シンタックスハイライト
-# zinit light zdharma/fast-syntax-highlighting
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Ctrl+r でコマンド履歴を検索
-# zinit light zdharma/history-search-multi-word
+zinit load zdharma-continuum/history-search-multi-word
+# function peco-history-selection() {
+#     BUFFER=$(history -n 1 | tac | awk '!a[$0]++' | peco)
+#     CURSOR=$#BUFFER
+#     zle reset-prompt
+# }
+# zle -N peco-history-selection
+# bindkey '^R' peco-history-selection
