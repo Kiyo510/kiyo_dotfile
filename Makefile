@@ -15,7 +15,7 @@ brew-bundle:
 	brew bundle --file=$(HOME)/dotfiles/Brewfile
 
 .PHONY: deploy
-deploy: 
+deploy:
 	@echo "---------------Start setting dotfiles symbolic link.---------------"
 	@./link.sh
 	@echo "---------------Finished Successfully.---------------"
