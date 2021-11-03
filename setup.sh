@@ -33,6 +33,7 @@ source $THIS_DIR/link.sh
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
 fi
 
 brew bundle --file=$THIS_DIR/Brewfile
