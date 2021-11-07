@@ -75,11 +75,6 @@ setopt hist_reduce_blanks
 # 古いコマンドと同じものは無視
 setopt hist_save_no_dups
 
-## 履歴保存管理
-HISTFILE=$ZDOTDIR/.zsh-history
-HISTSIZE=100000
-SAVEHIST=1000000
-
 ## 他のzshと履歴を共有
 setopt inc_append_history
 setopt share_history
