@@ -4,7 +4,7 @@
     "files.insertFinalNewline": true,
     "editor.tabSize": 4,
     "editor.formatOnPaste": true, // ペースト時に自動でフォーマット
-    "editor.formatOnSave": true, // ファイル保存時に自動でフォーマット
+    "editor.formatOnSave": false, // ファイル保存時に自動でフォーマット
     "editor.formatOnType": true, // 入力した行を自動でフォーマット
     "editor.renderWhitespace": "all",
     "editor.snippetSuggestions": "top", // Emmet などのスニペット候補を優先して表示
@@ -41,7 +41,7 @@
         "editor.defaultFormatter": "octref.vetur"
     },
     "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -49,5 +49,7 @@
     },
     // "terminal.integrated.fontFamily": "Meslo LG M DZ for Powerline",
     "terminal.integrated.fontFamily": "Hack Nerd Font",
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "workbench.colorTheme": "GitHub Dark",
+    "bladeFormatter.format.wrapLineLength": 1
 }
