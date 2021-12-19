@@ -117,4 +117,10 @@ zstyle ':completion:*:default' menu select=1
 zstyle ':completion::complete:*' use-cache true
 # 補完リストの表示間隔を狭くする
 setopt list_packed
+# github-cliの保管
+eval "$(gh completion -s zsh)"
 # ##### 補完関連 #######
+
+# direnv
+export EDITOR=code
+eval "$(direnv hook zsh)"
