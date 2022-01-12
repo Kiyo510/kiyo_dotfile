@@ -51,5 +51,5 @@
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "workbench.colorTheme": "GitHub Dark",
-    "bladeFormatter.format.wrapLineLength": 1
+    "bladeFormatter.format.wrapLineLength": 135
 }
