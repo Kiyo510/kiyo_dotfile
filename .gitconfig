@@ -7,6 +7,7 @@
 	quotepath = false
 [merge]
 	tool = code --wait \"$MERGED\"
+	conflictstyle = diff3
 [alias]
 	o = checkout
 	r = remote
