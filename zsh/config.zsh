@@ -124,3 +124,14 @@ eval "$(gh completion -s zsh)"
 # direnv
 export EDITOR=code
 eval "$(direnv hook zsh)"
+
+# php
+export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+
+# node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# dateをGUN Linux仕様にしたので、エイリアスを貼る
+# ref https://tatsuno-system.co.jp/2016/06/27/mac%E3%81%A7date%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%8C%E9%81%95%E3%81%86%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/
+alias date=/opt/homebrew/bin/gdate
