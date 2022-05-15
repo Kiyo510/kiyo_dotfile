@@ -20,3 +20,4 @@ alias:git ## gbdgr ## (){git branch | grep $1 | xargs git branch -d}
 alias:git ## gad ## git rm $(git ls-files --deleted)
 alias:heroku ## hegitremote ## hegitremote {app_name}
 alias:heroku ## hessh ## heroku run bash
+alias:ssh ## ssh-ichirou-stg-rds ## connect ichirou_stg RDS

@@ -1,3 +1,4 @@
+source ~/.profile
 #
 # Executes commands at login pre-zshrc.
 #

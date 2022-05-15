@@ -1,6 +1,6 @@
 [user]
-	email = kanzenziai_r@yahoo.co.jp
-	name = Kiyo510
+	email = sano-k@ichirou.co.jp
+	name = SanoKiyo
 [core]
 	editor = code --wait
 	excludesfile = /Users/kiyo/.gitignore_global

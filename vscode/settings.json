@@ -51,5 +51,13 @@
     "terminal.integrated.fontFamily": "Hack Nerd Font",
     "terminal.integrated.defaultProfile.osx": "zsh",
     "workbench.colorTheme": "GitHub Dark",
-    "bladeFormatter.format.wrapLineLength": 135
+    "bladeFormatter.format.wrapLineLength": 120,
+    "bracketPairColorizer.depreciation-notice": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "intelephense.environment.phpVersion": "7.4.3",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

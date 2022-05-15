@@ -43,6 +43,9 @@ alias gad='git rm $(git ls-files --deleted)'
 alias hegitremote='(){heroku git:remote --app $1}'
 alias hessh='heroku run bash'
 
+# ssh
+alias ssh-ichirou-stg-rds='ssh -N remote-ec2 -L 33306:ichirou-stg-db.c5bywnp9s9p4.ap-northeast-1.rds.amazonaws.com:3306'
+
 # zsh
 function jump_middle() {
     CURSOR=$((${#BUFFER} / 2))
@@ -127,8 +130,9 @@ export EDITOR=code
 eval "$(direnv hook zsh)"
 
 # php
-export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
-export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+# export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
+# export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
+export PATH=/Applications/MAMP/bin/php/php7.4.21/bin:$PATH
 
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
