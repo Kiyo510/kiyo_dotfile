@@ -5,6 +5,7 @@
 	editor = code --wait
 	excludesfile = /Users/kiyo/.gitignore_global
 	quotepath = false
+	autoCRLF = false
 [merge]
 	tool = code --wait \"$MERGED\"
 	conflictstyle = zdiff3
