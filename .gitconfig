@@ -2,13 +2,28 @@
 	email = sano-k@ichirou.co.jp
 	name = SanoKiyo
 [core]
-	editor = code --wait
+	editor = vim
 	excludesfile = /Users/kiyo/.gitignore_global
 	quotepath = false
 	autoCRLF = false
 [merge]
-	tool = code --wait \"$MERGED\"
+	tool = vim
 	conflictstyle = zdiff3
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+[delta]
+	plus-style = "syntax #012800"
+	minus-style = "syntax #340001"
+	syntax-theme = Monokai Extended Bright
+	navigate = true
+	line-numbers = true
+	side-by-side = true
+
+[interactive]
+	diffFilter = delta --color-only
 [alias]
 	o = checkout
 	r = remote
