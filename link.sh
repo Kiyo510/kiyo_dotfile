@@ -30,13 +30,17 @@ for f in .??*; do
     [[ "$f" == ".github" ]] && continue
     [[ "$f" == ".gitignore" ]] && continue
     [[ "$f" == ".gitconfig.local.template" ]] && continue
-    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitmodules ]] && continue
+    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitmodules|.idea ]] && continue
     ln -snfv "$THIS_DIR/$f" ~/
 done
 
 cd $ZSH_DIR
 for f in .??*; do
-    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitignore|.gitmodules ]] && continue
+    [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".github" ]] && continue
+    [[ "$f" == ".gitignore" ]] && continue
+    [[ "$f" == ".gitconfig.local.template" ]] && continue
+    [[ "$f" =~ .ssh|.aws|.DS_Store|.gitignore|.gitmodules|.idea ]] && continue
     ln -snfv "$ZSH_DIR/$f" ~/
 done
 
