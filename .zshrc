@@ -13,6 +13,8 @@ autoload -Uz _zinit
 ### End of Zinit's installer chunk
 
 SCRIPT_DIR=$HOME/dotfiles
+export ZDOTDIR=$HOME/dotfiles
 
 source "$SCRIPT_DIR"/zsh/plugins.zsh
 source "$SCRIPT_DIR"/zsh/config.zsh
+fpath+=${ZDOTDIR:-~}/.zsh_functions
