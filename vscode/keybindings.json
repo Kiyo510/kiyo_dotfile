@@ -14,5 +14,15 @@
     "key": "ctrl+shift+backspace",
     "command": "workbench.action.terminal.kill",
     "when": "terminalProcessSupported"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "-editor.action.joinLines",
+    "when": "editorTextFocus && !editorReadonly"
   }
 ]

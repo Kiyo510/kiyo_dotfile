@@ -59,5 +59,27 @@
     "intelephense.environment.phpVersion": "7.4.3",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "editor.accessibilitySupport": "on",
+     "vim.insertModeKeyBindings": [
+        {
+            "before": ["j","j"],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.otherModesKeyBindings": [
+        {
+            "before": ["leader","w"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "markdown.marp.enableHtml": true
 }
