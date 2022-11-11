@@ -8,7 +8,6 @@
 	autoCRLF = false
 [merge]
 	tool = vim
-	conflictstyle = zdiff3
 [pager]
 	diff = delta
 	log = delta
