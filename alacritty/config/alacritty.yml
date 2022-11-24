@@ -441,9 +441,8 @@ colors:
 shell:
   program: /bin/zsh
   args:
-    - -l
     - -c
-    - "zellij attach --index 0 --create"
+    - "/opt/homebrew/bin/tmux a -t 0 || /opt/homebrew/bin/tmux"
 
 # Startup directory
 #
