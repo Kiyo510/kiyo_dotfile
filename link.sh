@@ -7,6 +7,7 @@ ZSH_DIR=$THIS_DIR/zsh
 VIM_DIR=$THIS_DIR/vim
 PHPSTORM_DIR=$THIS_DIR/phpstorm
 ALACRITTY_DIR=$THIS_DIR/alacritty/config
+TMUX_DIR=$THIS_DIR/tmux
 
 echo "deploy starting..."
 
@@ -36,7 +37,7 @@ link_dotfiles() {
         [[ "$f" == ".github" ]] && continue
         [[ "$f" == ".gitignore" ]] && continue
         [[ "$f" == ".gitconfig.local.template" ]] && continue
-        [[ "$f" =~ .ssh|.aws|.DS_Store|.gitmodules|^\.idea$ ]] && continue
+        [[ "$f" =~ .ssh|.aws|.DS_Store|.gitmodules|^\.idea$|^\.vscode$ ]] && continue
         ln -snfv "$1/$f" ~/
     done
 }
@@ -45,5 +46,6 @@ link_dotfiles "$THIS_DIR"
 link_dotfiles "$ZSH_DIR"
 link_dotfiles "$VIM_DIR"
 link_dotfiles "$PHPSTORM_DIR"
+link_dotfiles "$TMUX_DIR"
 
 echo "success!"

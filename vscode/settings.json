@@ -81,5 +81,6 @@
             ]
         }
     ],
-    "markdown.marp.enableHtml": true
+    "markdown.marp.enableHtml": true,
+    "vim.useSystemClipboard": true
 }

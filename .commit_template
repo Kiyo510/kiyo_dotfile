@@ -1,0 +1,40 @@
+# ====  Emojis ====
+# 🐛   :bug: バグ修正
+# 🚑   :ambulance: クリティカルなHotfixブランチを修正したとき
+# 👍   :+1: 機能改善
+# ✨   :sparkles: 部分的な機能追加
+# 🎉   :tada: 盛大に祝うべき大きな機能追加
+# ♻ ️   :recycle: リファクタリング
+# 🗑️   :wastebasket: 不要な機能・使われなくなった機能の削除
+# 🔥   :fire: コードやファイルを削除したとき
+# 🎨   :art: コードの構造やフォーマットを更新したときに
+# 💚   :green_heart: テストやCIの修正・改善
+# 🚨   :rotating_light: Lintエラーの修正やコードスタイルの修正
+# 🚀   :rocket: パフォーマンス改善
+# 🆙   :up: 依存パッケージなどのアップデート
+# 🔒   :lock: 新機能の公開範囲の制限
+# 👮   :cop: セキュリティ関連の改善
+# 💡   :bulb: ソースコードにコメントを追加・更新
+# ✅   :white_check_mark: テストを追加・更新・パスしたとき
+# 💄   :lipstick: UI・スタイルを追加・更新
+# 🩹   :adhesive_bandage:  重要でない問題の単純な修正
+# 🌱   :seedling: シードファイルを追加・更新したとき
+# 🙈   :see_no_evil:  .gitignoreファイルを追加・更新したとき
+# 🤡   :clown_face: モックを作成したとき（模倣したとき）
+# 🚸   :children_crossing: UX/ユーザビリティを向上したとき
+# 💬    :speech_balloon: テキスト・リテラルを追加・更新したとき
+# 🚚   :truck: リソース（ファイル、パス、ルートなど）を移動したり、名前を変更
+# 📦   :package: コンパイル済みのファイルやパッケージの追加・更新を行ったとき
+# 🔀   :twisted_rightwards_arrows: ブランチをマージしたとき
+# ⏪   :rewind: リベートしたとき(変更点を元に戻したとき)
+# 💩   :poop: 改善すべき汚いコードを書いたとき
+# ✏ ️   :pencil2: 誤字脱字を修正したとき
+# 🔨   :hammer: 開発用スクリプトの追加・更新を行ったとき
+# 🔧   :wrench: 設定ファイルを追加・更新したとき
+# 🚧   :construction: 現在作業中である場合のとき
+# 📝   :memo: ドキュメントを追加・更新したとき
+
+# ==== Format ====
+# :emoji: commit message
+#
+# Commit body...

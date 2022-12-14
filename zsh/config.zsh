@@ -61,10 +61,10 @@ setopt AUTO_CD
 HISTFILE=~/.zsh_history
 
 # メモリに保存される履歴の件数
-export HISTSIZE=1000
+export HISTSIZE=5000000
 
 # 履歴ファイルに保存される履歴の件数
-export SAVEHIST=100000
+export SAVEHIST=500000000
 
 # 重複を記録しない
 setopt hist_ignore_dups
@@ -74,6 +74,9 @@ setopt EXTENDED_HISTORY
 
 # 余分な空白は詰めて記録
 setopt hist_reduce_blanks
+
+# 履歴が重複した場合に古い履歴を削除する
+setopt hist_ignore_all_dups
 
 # 古いコマンドと同じものは無視
 setopt hist_save_no_dups
