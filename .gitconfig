@@ -3,9 +3,9 @@
 	name = SanoKiyo
 [core]
 	editor = vim
-	excludesfile = /Users/kiyo/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	quotepath = false
-	autoCRLF = false
+	autocrlf = input
 [merge]
 	tool = vim
 [pager]
@@ -17,6 +17,8 @@
 	plus-style = "syntax #012800"
 	minus-style = "syntax #340001"
 	syntax-theme = Monokai Extended Bright
+	keep-plus-minus-markers=true
+	hunk-header-style="omit"
 	navigate = true
 	line-numbers = true
 	side-by-side = true
@@ -37,4 +39,10 @@
 	allowed = AKIAIOSFODNN7EXAMPLE
 	allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [commit]
-	template = /Users/kiyo/.commit_template
+	template = ~/.commit_template
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

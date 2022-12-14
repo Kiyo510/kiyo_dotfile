@@ -24,7 +24,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv >/dev/null; then eval "$(rbenv init -)"; fi
 
 # docker
-alias dc='docker-compose'
+alias dc='docker compose'
 alias docker-purge='docker stop $(docker ps -q) && docker rmi $(docker images -q) -f'
 alias dumpmonita='docker exec -it scrp_tabelog_monita_db_1 mysqldump -u root  monita_development'
 alias drm='docker system prune'
