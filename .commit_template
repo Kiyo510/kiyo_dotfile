@@ -22,7 +22,7 @@
 # 🙈   :see_no_evil:  .gitignoreファイルを追加・更新したとき
 # 🤡   :clown_face: モックを作成したとき（模倣したとき）
 # 🚸   :children_crossing: UX/ユーザビリティを向上したとき
-# 💬    :speech_balloon: テキスト・リテラルを追加・更新したとき
+# 💬   :speech_balloon: テキスト・リテラルを追加・更新したとき
 # 🚚   :truck: リソース（ファイル、パス、ルートなど）を移動したり、名前を変更
 # 📦   :package: コンパイル済みのファイルやパッケージの追加・更新を行ったとき
 # 🔀   :twisted_rightwards_arrows: ブランチをマージしたとき
@@ -38,3 +38,5 @@
 # :emoji: commit message
 #
 # Commit body...
+
+
