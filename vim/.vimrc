@@ -33,3 +33,6 @@ inoremap <silent> jj <ESC>
 let skk_large_jisyo = '~/SKK-JISYO.L'
 "ユーザ辞書を自動で保存する（お好みで）
 let skk_auto_save_jisyo = 1
+
+"自動改行させないように
+set textwidth=0
