@@ -132,6 +132,9 @@ eval "$(gh completion -s zsh)"
 export EDITOR=code
 eval "$(direnv hook zsh)"
 
+# GitHub CLI
+export GIT_EDITOR=vim
+
 # php
 # export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
 # export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"

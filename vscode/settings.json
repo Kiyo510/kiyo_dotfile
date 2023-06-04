@@ -82,5 +82,12 @@
         }
     ],
     "markdown.marp.enableHtml": true,
-    "vim.useSystemClipboard": true
+    "vim.useSystemClipboard": true,
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": true,
+        "scminput": false
+    }
 }
