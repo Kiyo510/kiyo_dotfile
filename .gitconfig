@@ -42,3 +42,5 @@
 	template = ~/.commit_template
 [pull]
 	ff = only
+[fetch]
+	prune = true

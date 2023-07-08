@@ -15,6 +15,7 @@ prompt_end() {
 . ~/z/z.sh
 
 # python
+export PATH="$HOME/.pyenv/shims:$PATH"
 # export PYENV_ROOT="$HOME/.pyenv"
 # export PATH="$PYENV_ROOT/bin:$PATH"
 # eval "$(pyenv init -)"
@@ -28,7 +29,7 @@ alias dc='docker compose'
 alias docker-purge='docker stop $(docker ps -q) && docker rmi $(docker images -q) -f'
 alias dumpmonita='docker exec -it scrp_tabelog_monita_db_1 mysqldump -u root  monita_development'
 alias drm='docker system prune'
-export DOCKER_CONTENT_TRUST=1
+export DOCKER_CONTENT_TRUST=0
 
 # git
 alias gs='git status'
@@ -38,6 +39,8 @@ alias -g B='`git branch -a | peco --prompt "GIT BRANCH>" | head -n 1 | sed -e "s
 alias -g H='`curl -sL https://api.github.com/users/Kiyo510/repos | jq -r ".[].full_name" | peco --prompt "GITHUB REPOS>" | head -n 1`'
 alias gbdgr='(){git branch | grep $1 | xargs git branch -d}'
 alias gad='git rm $(git ls-files --deleted)'
+# terminalでは動くのに何故かaliasでは動かないがとりあえずメモ程度に書いておく 
+alias ghprco='gh pr list | peco | awk "{print $1}" | xargs gh pr checkout`'
 
 # heroku
 alias hegitremote='(){heroku git:remote --app $1}'
@@ -45,6 +48,12 @@ alias hessh='heroku run bash'
 
 # ssh
 alias ssh-ichirou-stg-rds='ssh -N remote-ec2 -L 33306:ichirou-stg-db.c5bywnp9s9p4.ap-northeast-1.rds.amazonaws.com:3306'
+#Linuxコマンド
+if type trash-put &> /dev/null
+then
+    alias rm='trash-put'
+    alias sudo='sudo '
+fi
 
 # zsh
 function jump_middle() {

@@ -18,3 +18,4 @@ export ZDOTDIR=$HOME/dotfiles
 source "$SCRIPT_DIR"/zsh/plugins.zsh
 source "$SCRIPT_DIR"/zsh/config.zsh
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+export PATH="/opt/homebrew/opt/avr-gcc@8/bin:$PATH"
