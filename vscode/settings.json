@@ -88,6 +88,8 @@
         "*": true,
         "plaintext": false,
         "markdown": true,
-        "scminput": false
-    }
+        "scminput": false,
+    },
+    "github.copilot.advanced": {},
+    "audioCues.volume": 0
 }
