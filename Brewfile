@@ -158,7 +158,6 @@ mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Trello", id: 1278508951
-mas "UpNote", id: 1398373917
 vscode "adpyke.vscode-sql-formatter"
 vscode "alefragnani.project-manager"
 vscode "amiralizadeh9480.laravel-extra-intellisense"
