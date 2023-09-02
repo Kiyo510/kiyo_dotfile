@@ -16,12 +16,6 @@ sync-vscode:
 	@cd alacritty/ && ./sync.sh
 	@echo "--------------------Finished Successfully.--------------------"
 
-.PHONY: sync-raycast
-sync-vscode:
-	@echo "------------------Start Sync Alacritty Settings.-----------------"
-	@cd raycast/ && ./sync.sh
-	@echo "--------------------Finished Successfully.--------------------"
-
 .PHONY: brew-bundle
 brew-bundle:
 	brew bundle --file=$(HOME)/dotfiles/Brewfile
