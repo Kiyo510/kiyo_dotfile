@@ -23,7 +23,7 @@ jobs:
           rm -rf /usr/local/bin/go
           rm -rf /usr/local/bin/gofmt
 
-      - name: Cache Homebrew and setup results
+      - name: Cache brew install step
         uses: actions/cache@v3
         id: cache-setup
         with:
@@ -34,8 +34,11 @@ jobs:
           restore-keys: |
             macos-setup-${{ runner.os }}-
 
+      - name: Setup environment variable if cache hit
+        if: steps.cache-setup.outputs.cache-hit == 'true'
+        run: echo "SKIP_BREW_BUNDLE=true" >> $GITHUB_ENV
+
       - name: Run setup.sh
-        if: steps.cache-setup.outputs.cache-hit != 'true'
         run: |
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
           ${GITHUB_WORKSPACE}/setup.sh
