@@ -13,6 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Remove existing symlinks
+        run: |
+          rm -rf /usr/local/bin/aws
+          rm -rf /usr/local/bin/go
+          rm -rf /usr/local/bin/cjpeg
+          rm -rf /usr/local/bin/arm-none-eabi-c++
+
       - name: Run setup.sh
         run: |
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
