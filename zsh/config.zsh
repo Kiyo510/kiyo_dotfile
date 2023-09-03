@@ -66,6 +66,24 @@ function jump_middle() {
 zle -N jump_middle
 bindkey "^j" jump_middle
 
+# 失敗したコマンドは履歴に保存しない
+autoload -Uz add-zsh-hook
+
+remove_last_history_if_not_needed () {
+  local last_status="$?"
+  local HISTFILE=~/.zsh_history
+  if [[ ${last_status} -ne 0 ]]; then
+    fc -W
+    ed -s ${HISTFILE} <<EOF >/dev/null
+d
+w
+q
+EOF
+    fc -R
+  fi
+}
+add-zsh-hook precmd remove_last_history_if_not_needed
+
 # AUTO_CDオプションを有効にする
 setopt AUTO_CD
 
@@ -78,8 +96,11 @@ export HISTSIZE=5000000
 # 履歴ファイルに保存される履歴の件数
 export SAVEHIST=500000000
 
-# 重複を記録しない
-setopt hist_ignore_dups
+# 重複を除外して履歴を保持
+setopt HIST_IGNORE_ALL_DUPS 
+
+# 最初の履歴を削除して新しいものを追加
+setopt HIST_SAVE_NO_DUPS
 
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
