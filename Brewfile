@@ -113,8 +113,6 @@ brew "trash", link: false
 brew "trash-cli"
 brew "tree"
 brew "wget"
-brew "yarn"
-brew "zellij"
 brew "zsh"
 brew "aquasecurity/trivy/trivy"
 brew "armmbed/formulae/arm-none-eabi-gcc"
