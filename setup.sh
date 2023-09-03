@@ -53,6 +53,9 @@ else
     echo 'z already installed.'
 fi
 
+source ~/.zshrc
+zinit self-update
+
 cat <<END
 **************************************************
 DOTFILES SETUP FINISHED! 
