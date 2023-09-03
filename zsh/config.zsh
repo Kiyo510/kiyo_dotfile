@@ -40,7 +40,7 @@ alias -g H='`curl -sL https://api.github.com/users/Kiyo510/repos | jq -r ".[].fu
 alias gbdgr='(){git branch | grep $1 | xargs git branch -d}'
 alias gad='git rm $(git ls-files --deleted)'
 # terminalでは動くのに何故かaliasでは動かないがとりあえずメモ程度に書いておく 
-alias ghprco='gh pr list | peco | awk "{print $1}" | xargs gh pr checkout`'
+alias ghprco='gh pr list | peco | awk "{print $1}" | xargs gh pr checkout'
 
 # heroku
 alias hegitremote='(){heroku git:remote --app $1}'
@@ -84,14 +84,11 @@ EOF
 }
 add-zsh-hook precmd remove_last_history_if_not_needed
 
-# AUTO_CDオプションを有効にする
-setopt AUTO_CD
-
 # 履歴ファイルの保存先
 HISTFILE=~/.zsh_history
 
 # メモリに保存される履歴の件数
-export HISTSIZE=5000000
+export HISTSIZE=50000
 
 # 履歴ファイルに保存される履歴の件数
 export SAVEHIST=500000000
@@ -106,17 +103,11 @@ setopt HIST_SAVE_NO_DUPS
 setopt EXTENDED_HISTORY
 
 # 余分な空白は詰めて記録
-setopt hist_reduce_blanks
-
-# 履歴が重複した場合に古い履歴を削除する
-setopt hist_ignore_all_dups
-
-# 古いコマンドと同じものは無視
-setopt hist_save_no_dups
+setopt HIST_REDUCE_BLANKS
 
 ## 他のzshと履歴を共有
-setopt inc_append_history
-setopt share_history
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
 
 ## パスを直接入力してもcdする
 setopt AUTO_CD
@@ -158,7 +149,6 @@ zstyle ':completion::complete:*' use-cache true
 setopt list_packed
 # github-cliの補完
 eval "$(gh completion -s zsh)"
-
 # ##### 補完関連 #######
 
 # direnv
