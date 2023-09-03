@@ -28,18 +28,6 @@ jobs:
           HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
           HOMEBREW_BUNDLE_CASK_SKIP: "docker"
 
-      - name: Run sync-vscode
-        run: |
-          make sync-vscode
-
-      - name: Run brew bundle
-        run: |
-          export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
-          make brew-bundle
-        env:
-          HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
-          HOMEBREW_BUNDLE_CASK_SKIP: "docker"
-
       - name: Run deploy
         run: |
           make deploy
