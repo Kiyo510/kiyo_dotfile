@@ -6,7 +6,6 @@ Run this:
 
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Kiyo510/dotfiles/master/setup.sh)"
-source ~/.zshrc && zinit self-update
 ```
 
 ## Usage
