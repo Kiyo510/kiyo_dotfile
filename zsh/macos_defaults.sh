@@ -5,9 +5,9 @@
 #keyboardid="${keyboard_vid}-${keyboard_pid}-0"
 ## Capls Lock キーを control キーにする．
 #defaults -currentHost write -g com.apple.keyboard.modifiermapping.${keyboardid} -array-add '<dict><key>HIDKeyboardModifierMappingDst</key><integer>30064771300</integer><key>HIDKeyboardModifierMappingSrc</key><integer>30064771129</integer></dict>'
-osascript  fix_control_key.scpt 
-read -p "システム環境設定>セキュリティとプライバシ>プライバシー>アクセシビリティ にて、ターミナルからのアプリケーションの制御を許可してください"
-osascript  fix_control_key.scpt 
+# osascript  fix_control_key.scpt 
+# read -p "システム環境設定>セキュリティとプライバシ>プライバシー>アクセシビリティ にて、ターミナルからのアプリケーションの制御を許可してください"
+# osascript  fix_control_key.scpt
 
 # ========== General ==========
 defaults write "Apple Global Domain" com.apple.mouse.scaling 3
