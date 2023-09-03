@@ -35,4 +35,6 @@ let skk_large_jisyo = '~/SKK-JISYO.L'
 let skk_auto_save_jisyo = 1
 
 "自動改行させないように
-set textwidth=0
+autocmd FileType gitcommit :set formatoptions=q
+
+autocmd FileType gitcommit setlocal spell
