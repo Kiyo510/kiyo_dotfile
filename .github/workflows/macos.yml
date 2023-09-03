@@ -18,7 +18,7 @@ jobs:
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
           ${GITHUB_WORKSPACE}/setup.sh
         env:
-          HOMEBREW_BUNDLE_BREW_SKIP: "go mono awscli  golangci-lint jpeg"
+          HOMEBREW_BUNDLE_BREW_SKIP: "go mono awscli golangci-lint"
           HOMEBREW_BUNDLE_CASK_SKIP: "docker"
 
       - name: Run deploy
