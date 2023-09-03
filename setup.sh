@@ -55,6 +55,7 @@ else
     echo 'z already installed.'
 fi
 
+exec zsh
 zinit self-update
 
 cat <<END
