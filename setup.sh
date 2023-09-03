@@ -53,8 +53,8 @@ else
     echo 'z already installed.'
 fi
 
-source $THIS_DIR/.zshrc
-zinit self-update
+# source ~/.zshrc
+# zinit self-update
 
 cat <<END
 **************************************************
