@@ -15,10 +15,8 @@ jobs:
 
       - name: Remove existing symlinks
         run: |
-          rm -rf /usr/local/bin/aws
-          rm /usr/local/bin/aws_completer
-          rm -rf /usr/local/bin/go
-          rm -rf /usr/local/bin/gofmt
+          brew link --overwrite awscli
+          brew link --overwrite go
 
       - name: Run setup.sh
         run: |
