@@ -13,12 +13,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Remove existing symlinks
+        run: |
+          rm -rf /usr/local/bin/aws
+          rm /usr/local/bin/aws_completer
+          rm -rf /usr/local/bin/go
+          rm -rf /usr/local/bin/gofmt
+
       - name: Run setup.sh
         run: |
           export HOMEBREW_BUNDLE_MAS_SKIP=$(brew bundle list --mas | paste -sd " " -)
           ${GITHUB_WORKSPACE}/setup.sh
         env:
-          HOMEBREW_BUNDLE_BREW_SKIP: "go mono awscli golangci-lint"
+          HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
           HOMEBREW_BUNDLE_CASK_SKIP: "docker"
 
       - name: Run deploy
