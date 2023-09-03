@@ -20,7 +20,6 @@ jobs:
           rm -rf /usr/local/bin/go
           rm -rf /usr/local/bin/gofmt
           brew unlink jpeg-turbo
-          brew link --overwrite arm-none-eabi-gcc@9
 
       - name: Run setup.sh
         run: |
