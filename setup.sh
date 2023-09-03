@@ -61,6 +61,5 @@ zinit self-update
 cat <<END
 **************************************************
 DOTFILES SETUP FINISHED! 
-PLEASE NEXT RUN "source ~/.zshrc && zinit self-update" 
 **************************************************
 END
