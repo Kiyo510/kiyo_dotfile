@@ -11,7 +11,7 @@ sync-vscode:
 	@echo "--------------------Finished Successfully.--------------------"
 
 .PHONY: sync-alacritty
-sync-vscode:
+sync-alacritty:
 	@echo "------------------Start Sync Alacritty Settings.-----------------"
 	@cd alacritty/ && ./sync.sh
 	@echo "--------------------Finished Successfully.--------------------"
