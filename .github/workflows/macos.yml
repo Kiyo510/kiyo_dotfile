@@ -16,9 +16,11 @@ jobs:
       - name: Remove existing symlinks
         run: |
           rm -rf /usr/local/bin/aws
+          rm /usr/local/bin/aws_completer
           rm -rf /usr/local/bin/go
-          rm -rf /usr/local/bin/cjpeg
-          rm -rf /usr/local/bin/arm-none-eabi-c++
+          rm -rf /usr/local/bin/gofmt
+          brew unlink jpeg-turbo
+          brew link --overwrite arm-none-eabi-gcc@9
 
       - name: Run setup.sh
         run: |
