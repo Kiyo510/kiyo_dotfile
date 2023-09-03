@@ -46,8 +46,11 @@ alias ghprco='gh pr list | peco | awk "{print $1}" | xargs gh pr checkout`'
 alias hegitremote='(){heroku git:remote --app $1}'
 alias hessh='heroku run bash'
 
-# ssh
-alias ssh-ichirou-stg-rds='ssh -N remote-ec2 -L 33306:ichirou-stg-db.c5bywnp9s9p4.ap-northeast-1.rds.amazonaws.com:3306'
+# dateをGUN Linux仕様にしたので、エイリアスを貼る
+# ref https://tatsuno-system.co.jp/2016/06/27/mac%E3%81%A7date%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%8C%E9%81%95%E3%81%86%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/
+alias date=/opt/homebrew/bin/gdate
+alias ls='ls -G'
+
 #Linuxコマンド
 if type trash-put &> /dev/null
 then
@@ -144,14 +147,8 @@ eval "$(direnv hook zsh)"
 # GitHub CLI
 export GIT_EDITOR=vim
 
-# php
-# export PATH="/opt/homebrew/opt/php@7.4/bin:$PATH"
-# export PATH="/opt/homebrew/opt/php@7.4/sbin:$PATH"
-export PATH=/Applications/MAMP/bin/php/php7.4.21/bin:$PATH
-
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# dateをGUN Linux仕様にしたので、エイリアスを貼る
-# ref https://tatsuno-system.co.jp/2016/06/27/mac%E3%81%A7date%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%8C%E9%81%95%E3%81%86%E4%BB%B6%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/
-alias date=/opt/homebrew/bin/gdate
+# rust
+export PATH=$HOME/.cargo/bin:$PATH
