@@ -14,7 +14,6 @@ bung87.rails
 bung87.vscode-gemfile
 codezombiech.gitignore
 codingyu.laravel-goto-view
-CoenraadS.bracket-pair-colorizer
 darkriszty.markdown-table-prettify
 dbaeumer.vscode-eslint
 DeepInThought.vscode-shell-snippets
@@ -25,7 +24,6 @@ eamodio.gitlens
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
 esbenp.prettier-vscode
-formulahendry.terminal
 foxundermoon.shell-format
 GitHub.copilot
 GitHub.github-vscode-theme
@@ -55,7 +53,6 @@ ms-vscode.cpptools-extension-pack
 ms-vscode.cpptools-themes
 ms-vscode.makefile-tools
 ms-vsliveshare.vsliveshare
-ms-vsliveshare.vsliveshare-audio
 ms-vsliveshare.vsliveshare-pack
 neilbrayfield.php-docblocker
 nickgo.cuelang

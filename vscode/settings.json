@@ -91,5 +91,6 @@
         "scminput": false,
     },
     "github.copilot.advanced": {},
-    "audioCues.volume": 0
+    "audioCues.volume": 0,
+    "editor.guides.bracketPairs": true
 }
