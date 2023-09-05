@@ -95,9 +95,12 @@ export SAVEHIST=500000000
 
 # 重複を除外して履歴を保持
 setopt HIST_IGNORE_ALL_DUPS 
-
-# 最初の履歴を削除して新しいものを追加
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_FIND_NO_DUPS
 setopt HIST_SAVE_NO_DUPS
+setopt HIST_BEEP
 
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
