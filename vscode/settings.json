@@ -92,5 +92,6 @@
     },
     "github.copilot.advanced": {},
     "audioCues.volume": 0,
-    "editor.guides.bracketPairs": true
+    "editor.guides.bracketPairs": true,
+    "git.openRepositoryInParentFolders": "never"
 }
