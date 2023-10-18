@@ -18,6 +18,8 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Ctrl+r でコマンド履歴を検索
 zinit load zdharma-continuum/history-search-multi-word
+# 検索結果を降順に表示
+zstyle ':history-search-multi-word' order newest
 # function peco-history-selection() {
 #     BUFFER=$(history -n 1 | tac | awk '!a[$0]++' | peco)
 #     CURSOR=$#BUFFER
