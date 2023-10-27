@@ -23,7 +23,7 @@ defaults write -g QLPanelAnimationDuration -float 0.10
 defaults write com.apple.dock tilesize -int 32
 
 ## position
-defaults write com.apple.dock orientation -string "bottom"
+defaults write com.apple.dock orientation -string "left"
 
 ## autohide
 defaults write com.apple.dock autohide -bool true
