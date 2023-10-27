@@ -17,7 +17,6 @@ defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
 defaults write -g QLPanelAnimationDuration -float 0
 defaults write -g QLPanelAnimationDuration -float 0.10
 
-
 # ========== Dock ==========
 ## size
 defaults write com.apple.dock tilesize -int 32
