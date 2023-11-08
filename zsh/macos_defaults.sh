@@ -16,6 +16,7 @@ defaults write -g InitialKeyRepeat -int 15
 defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
 defaults write -g QLPanelAnimationDuration -float 0
 defaults write -g QLPanelAnimationDuration -float 0.10
+defaults write com.apple.screencapture location ~/Documents/Screen_Shot
 
 # ========== Dock ==========
 ## size
@@ -30,13 +31,15 @@ defaults write com.apple.dock autohide -bool true
 ## animate opening application
 defaults write com.apple.dock launchanim -bool false
 
+## autohide time
+defaults write com.apple.dock autohide-time-modifier -int 0
+
 ## Show indicators for open applications
 defaults write com.apple.dock show-process-indicators -bool true
 
 ##  Minimize windows into application icon
 defaults write com.apple.dock minimize-to-application -bool true
 
-# ========== Dock ==========
 ## disabble drop shadow
 defaults write com.apple.screencapture disable-shadow true
 
