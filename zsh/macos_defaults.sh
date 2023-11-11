@@ -34,6 +34,9 @@ defaults write com.apple.dock launchanim -bool false
 ## autohide time
 defaults write com.apple.dock autohide-time-modifier -int 0
 
+## autohide delay
+defaults write com.apple.dock autohide-delay -float 0
+
 ## Show indicators for open applications
 defaults write com.apple.dock show-process-indicators -bool true
 
