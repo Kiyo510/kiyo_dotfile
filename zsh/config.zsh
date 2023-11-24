@@ -166,3 +166,6 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # rust
 export PATH=$HOME/.cargo/bin:$PATH
+
+# gRPC
+export PATH=$PATH:$(go env GOPATH)/bin
