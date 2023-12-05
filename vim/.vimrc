@@ -14,12 +14,17 @@ if &runtimepath !~# '/dein.vim'
         \ .. s:dir->fnamemodify(':p')->substitute('[/\\]$', '', '')
 endif
 
+if dein#load_state('~/.cache/dein')
+  call dein#begin('~/.cache/dein')
+  call dein#add('tyru/eskk.vim')
+  call dein#end()
+endif
+
 inoremap <silent> jj <ESC>
 
 "SKKの辞書ファイルの場所
-let skk_large_jisyo = '~/SKK-JISYO.L'
-"ユーザ辞書を自動で保存する（お好みで）
-let skk_auto_save_jisyo = 1
+let g:eskk#directory = "~/.cache/dein/repos/github.com/tyru/eskk.vim"
+let g:eskk#large_dictionary = {'path': "~/SKK-JISYO.L", 'sorted': 1, 'encoding': 'euc-jp',}
 
 "自動改行させないように
 autocmd FileType gitcommit :set formatoptions=q
