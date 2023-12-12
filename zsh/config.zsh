@@ -164,6 +164,9 @@ export GIT_EDITOR=vim
 # node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 
+# mattermost
+ulimit -n 8096
+
 # rust
 export PATH=$HOME/.cargo/bin:$PATH
 
