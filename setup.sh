@@ -55,7 +55,7 @@ else
     echo 'z already installed.'
 fi
 
-source $THIS_DIR/vim/skk.sh
+# source $THIS_DIR/vim/skk.sh
 
 exec zsh
 zinit self-update
