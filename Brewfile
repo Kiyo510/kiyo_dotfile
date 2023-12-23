@@ -79,7 +79,6 @@ brew "libxml2"
 brew "libzip"
 brew "lua"
 brew "mas"
-brew "mcrypt"
 brew "mkcert"
 brew "mockery"
 brew "mysql"
@@ -150,6 +149,8 @@ mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "QREncoder", id: 452695239
+mas "Xcode", id: 497799835
 vscode "adpyke.vscode-sql-formatter"
 vscode "alefragnani.project-manager"
 vscode "amiralizadeh9480.laravel-extra-intellisense"

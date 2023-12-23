@@ -22,6 +22,8 @@ jobs:
           rm -rf /usr/local/bin/aws_completer
           rm -rf /usr/local/bin/go
           rm -rf /usr/local/bin/gofmt
+          rm /usr/local/bin/2to3
+          rm /usr/local/bin/2to3-3.12
 
       - name: Cache brew install step
         uses: actions/cache@v3
