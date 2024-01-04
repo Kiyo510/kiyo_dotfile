@@ -16,12 +16,15 @@ defaults write -g InitialKeyRepeat -int 15
 defaults write -g NSDocumentRevisionsWindowTransformAnimation -bool false
 defaults write -g QLPanelAnimationDuration -float 0
 defaults write -g QLPanelAnimationDuration -float 0.10
+
+if [ ! -e ~/Documents/Screen_Shot ]; then
+    mkdir ~/Documents/Screen_Shot
+fi
 defaults write com.apple.screencapture location ~/Documents/Screen_Shot
 
 # ========== Dock ==========
 ## size
 defaults write com.apple.dock tilesize -int 32
-
 ## position
 defaults write com.apple.dock orientation -string "left"
 
