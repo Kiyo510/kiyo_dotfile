@@ -14,7 +14,7 @@ EOF
 
 set -eu
 
-THIS_DIR=$HOME/dotfiles
+THIS_DIR="$HOME/dotfiles"
 
 echo "start setup..."
 if [ ! -d "$THIS_DIR" ]; then
@@ -27,37 +27,39 @@ else
     git pull origin master
 fi
 
-cd $THIS_DIR
-source $THIS_DIR/link.sh
+cd "$THIS_DIR"
+source "$THIS_DIR/link.sh"
 
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
+    echo "eval '$(/opt/homebrew/bin/brew shellenv)'" >> "$HOME/.zprofile"
 fi
 
 if [ "${SKIP_BREW_BUNDLE:-}" != "true" ]; then
-    brew bundle --file=$THIS_DIR/Brewfile
+    brew update
+    brew upgrade
+    brew bundle --file="$THIS_DIR/Brewfile"
 fi
 
-cd $THIS_DIR
-source $THIS_DIR/vscode/sync.sh
-source $THIS_DIR/alfred/sync.sh
-source $THIS_DIR/alacritty/sync.sh
-source $THIS_DIR/zsh/macos_defaults.sh
+cd "$THIS_DIR"
+source "$THIS_DIR/vscode/sync.sh"
+source "$THIS_DIR/alfred/sync.sh"
+source "$THIS_DIR/alacritty/sync.sh"
+source "$THIS_DIR/zsh/macos_defaults.sh"
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
     echo 'install z..'
-    cd $HOME
-    git clone https://github.com/rupa/z.git $HOME/z
+    cd "$HOME"
+    git clone https://github.com/rupa/z.git "$HOME/z"
 else
     echo 'z already installed.'
 fi
 
-# source $THIS_DIR/vim/skk.sh
+# source "$THIS_DIR/vim/skk.sh"
 
-exec zsh
+# exec zsh
 zinit self-update
 
 cat <<END
