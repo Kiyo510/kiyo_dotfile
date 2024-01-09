@@ -47,6 +47,9 @@ alias ghprco='gh pr list | peco | awk "{print $1}" | xargs gh pr checkout'
 alias date=/opt/homebrew/bin/gdate
 alias ls='ls -G'
 
+# ssh
+alias sshp="grep -w Host ~/.ssh/config | peco | awk '{print \$2}' | xargs -o -n 1 ssh"
+
 #Linuxコマンド
 if type trash-put &> /dev/null
 then
