@@ -36,9 +36,9 @@ if ! command -v brew >/dev/null 2>&1; then
     echo "eval '$(/opt/homebrew/bin/brew shellenv)'" >> "$HOME/.zprofile"
 fi
 
+# 前回のコミットと比較してbrewfileに差分が無ければskipする
 if [ "${SKIP_BREW_BUNDLE:-}" != "true" ]; then
     brew update
-    brew upgrade
     brew bundle --file="$THIS_DIR/Brewfile"
 fi
 
