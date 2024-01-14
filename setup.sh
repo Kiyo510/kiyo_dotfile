@@ -38,7 +38,6 @@ fi
 
 # 前回のコミットと比較してbrewfileに差分が無ければskipする
 if [ "${SKIP_BREW_BUNDLE:-}" != "true" ]; then
-    brew update
     brew bundle --file="$THIS_DIR/Brewfile"
 fi
 
