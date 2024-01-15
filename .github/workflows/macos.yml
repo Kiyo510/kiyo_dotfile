@@ -24,6 +24,9 @@ jobs:
           rm -rf /usr/local/bin/gofmt
           rm /usr/local/bin/2to3
           rm /usr/local/bin/2to3-3.12
+          rm /usr/local/bin/2to3-3.11
+          rm /usr/local/bin/idle3.12
+          rm /usr/local/bin/pydoc3.12
 
       - name: Cache brew install step
         uses: actions/cache@v3
@@ -46,7 +49,7 @@ jobs:
           ${GITHUB_WORKSPACE}/setup.sh
         env:
           HOMEBREW_BUNDLE_BREW_SKIP: "go mono"
-          HOMEBREW_BUNDLE_CASK_SKIP: "docker"
+          HOMEBREW_BUNDLE_CASK_SKIP: "docker python@3.12"
 
       # - name: Load .zshenv
       #   run: |
