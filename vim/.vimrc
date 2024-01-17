@@ -30,3 +30,5 @@ let g:eskk#large_dictionary = {'path': "~/SKK-JISYO.L", 'sorted': 1, 'encoding':
 autocmd FileType gitcommit :set formatoptions=q
 
 autocmd FileType gitcommit setlocal spell
+
+set clipboard+=unnamed
