@@ -169,7 +169,8 @@ ulimit -n 8096
 export PATH=$HOME/.cargo/bin:$PATH
 
 # gRPC
-export PATH=$PATH:$(go env GOPATH)/bin
+# export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="$PATH:$(asdf where golang)/packages/bin"
 
 # gcp-cli
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
