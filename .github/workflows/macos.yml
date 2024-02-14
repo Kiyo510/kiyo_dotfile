@@ -29,7 +29,7 @@ jobs:
           # rm /usr/local/bin/pydoc3.12
 
       - name: Cache brew install step
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         id: cache-setup
         with:
           path: |
