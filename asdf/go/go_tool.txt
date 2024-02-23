@@ -1,0 +1,4 @@
+github.com/cosmtrek/air
+github.com/go-delve/delve/cmd/dlv
+github.com/reviewdog/reviewdog/cmd/reviewdog
+github.com/tsenart/vegeta

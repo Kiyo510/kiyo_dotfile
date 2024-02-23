@@ -47,6 +47,7 @@ source "$PROJECT_ROOT/alfred/sync.sh"
 source "$PROJECT_ROOT/alacritty/sync.sh"
 source "$PROJECT_ROOT/zsh/macos_defaults.sh"
 source "$PROJECT_ROOT/git/sync.sh"
+source "$PROJECT_ROOT/asdf/go/sync.sh"
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
