@@ -59,8 +59,9 @@ fi
 
 # source "$PROJECT_ROOT/vim/skk.sh"
 
-# exec zsh
-zinit self-update
+# install zinit
+# ref: https://github.com/zdharma-continuum/zinit?tab=readme-ov-file#manual
+exec zsh
 
 cat <<END
 **************************************************
