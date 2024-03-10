@@ -15,10 +15,6 @@ prompt_end() {
 . ~/z/z.sh
 
 # python
-export PATH="$HOME/.pyenv/shims:$PATH"
-# export PYENV_ROOT="$HOME/.pyenv"
-# export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
 
 # ruby
 export PATH="$HOME/.rbenv/bin:$PATH"
