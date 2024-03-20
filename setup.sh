@@ -14,21 +14,21 @@ EOF
 
 set -eu
 
-THIS_DIR="$HOME/dotfiles"
+PROJECT_ROOT="$HOME/dotfiles"
 
 echo "start setup..."
-if [ ! -d "$THIS_DIR" ]; then
-    git clone https://github.com/Kiyo510/dotfiles.git "$THIS_DIR"
+if [ ! -d "$PROJECT_ROOT" ]; then
+    git clone https://github.com/Kiyo510/dotfiles.git "$PROJECT_ROOT"
 else
-    echo "$THIS_DIR already downloaded. Updating..."
-    cd "$THIS_DIR"
+    echo "$PROJECT_ROOT already downloaded. Updating..."
+    cd "$PROJECT_ROOT"
     git stash
     git checkout master
     git pull origin master
 fi
 
-cd "$THIS_DIR"
-source "$THIS_DIR/link.sh"
+cd "$PROJECT_ROOT"
+source "$PROJECT_ROOT/link.sh"
 
 if ! command -v brew >/dev/null 2>&1; then
     # Install homebrew: https://brew.sh/
@@ -38,15 +38,15 @@ fi
 
 # 前回のコミットと比較してBrewfileに差分が無ければskipする
 if [ "${SKIP_BREW_BUNDLE:-}" != "true" ]; then
-    brew bundle --file="$THIS_DIR/Brewfile"
+    brew bundle --file="$PROJECT_ROOT/Brewfile"
 fi
 
-cd "$THIS_DIR"
-source "$THIS_DIR/vscode/sync.sh"
-source "$THIS_DIR/alfred/sync.sh"
-source "$THIS_DIR/alacritty/sync.sh"
-source "$THIS_DIR/zsh/macos_defaults.sh"
-source "$THIS_DIR/git/sync.sh"
+cd "$PROJECT_ROOT"
+source "$PROJECT_ROOT/vscode/sync.sh"
+source "$PROJECT_ROOT/alfred/sync.sh"
+source "$PROJECT_ROOT/alacritty/sync.sh"
+source "$PROJECT_ROOT/zsh/macos_defaults.sh"
+source "$PROJECT_ROOT/git/sync.sh"
 
 # install z
 if ! command -v z >/dev/null 2>&1; then
@@ -57,7 +57,7 @@ else
     echo 'z already installed.'
 fi
 
-# source "$THIS_DIR/vim/skk.sh"
+# source "$PROJECT_ROOT/vim/skk.sh"
 
 # exec zsh
 zinit self-update
