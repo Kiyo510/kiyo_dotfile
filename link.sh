@@ -2,12 +2,11 @@
 
 set -exu
 
-THIS_DIR=$HOME/dotfiles
-ZSH_DIR=$THIS_DIR/zsh
-VIM_DIR=$THIS_DIR/vim
-PHPSTORM_DIR=$THIS_DIR/phpstorm
-ALACRITTY_DIR=$THIS_DIR/alacritty/config
-TMUX_DIR=$THIS_DIR/tmux
+PROJECT_ROOT=$HOME/dotfiles
+ZSH_DIR=$PROJECT_ROOT/zsh
+VIM_DIR=$PROJECT_ROOT/vim
+PHPSTORM_DIR=$PROJECT_ROOT/phpstorm
+TMUX_DIR=$PROJECT_ROOT/tmux
 
 echo "deploy starting..."
 
@@ -30,7 +29,7 @@ link_directory() {
 }
 
 link_dotfiles() {
-    cd $1
+    cd "$1"
 
     for f in .??*; do
         [[ "$f" == ".git" ]] && continue
@@ -42,7 +41,7 @@ link_dotfiles() {
     done
 }
 
-link_dotfiles "$THIS_DIR"
+link_dotfiles "$PROJECT_ROOT"
 link_dotfiles "$ZSH_DIR"
 link_dotfiles "$VIM_DIR"
 link_dotfiles "$PHPSTORM_DIR"
