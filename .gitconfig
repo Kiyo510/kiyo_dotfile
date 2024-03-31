@@ -3,7 +3,6 @@
 	name = Kiyo510
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore_global
 	quotepath = false
 	autocrlf = input
 [merge]
