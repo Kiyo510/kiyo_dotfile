@@ -21,7 +21,6 @@ Setting dotfiles symbolic link:
 make deploy
 ```
 
-
 Install Brewfile:
 
 ```bash
